@@ -11,7 +11,7 @@ robotics simulation, and software–hardware integration.
 
 ---
 
-## Features
+ Features
 - Arduino Nano flight controller
 - MPU6050 IMU-based attitude estimation
 - PID stabilization (roll, pitch, yaw)
@@ -19,24 +19,35 @@ robotics simulation, and software–hardware integration.
 - Webots simulation for controller validation
 - Modular, extensible software architecture
 
----
 
-## System Architecture
+
+ System Architecture
 The system is divided into four layers:
 
-1. **Embedded Control**  
+1. Embedded Control 
    Real-time flight control on Arduino Nano (sensor fusion, PID, motor mixing)
 
-2. **High-Level Control**  
+2. High-Level Control 
    Python-based serial communication, command generation, and monitoring
 
-3. **Simulation**  
+3. Simulation 
    Webots-based quadcopter model for testing control behavior
 
-4. **Documentation**  
+4. Documentation
    Engineering-focused documentation extracted from thesis work
 
----
 
-## Repository Structure
-
+ Repository Structure
+ 
+quadcopter-arduino-python-webots/
+│
+├── src/
+│ ├── cpp/ # Arduino flight controller
+│ └── python/ # Python serial control & GUI
+│
+├── simulations/
+│ └── webots/ # Webots worlds and controllers
+│
+├── docs/ # Engineering documentation
+├── figures/
+└── README.md
