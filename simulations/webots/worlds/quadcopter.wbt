@@ -1,0 +1,12 @@
+#VRML_SIM R2020b utf8
+
+WorldInfo {
+  title "quadcopter.wbt"
+}
+
+Viewpoint {
+  position 0 0 10
+  description "Default view"
+}
+
+# Minimal placeholder world. Replace with a proper quadcopter PROTO and scene for full simulation.
